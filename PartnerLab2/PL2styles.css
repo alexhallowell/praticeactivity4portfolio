@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: white;
+    margin: 20px;
+}
+
+h1, p {
+    color: #333;
+}
+
+.customization, .todo-list {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    text-align: left;
+    background: #f9f9f9;
+    border-radius: 8px;
+}
+
+input, select, button {
+    display: block;
+    margin: 10px 0;
+    padding: 8px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}

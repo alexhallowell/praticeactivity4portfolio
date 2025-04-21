@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Purchase Gymshark Top Wear</title>
+        <link rel="stylesheet" href="partnerlab.css">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="page1.html">Home</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <h1>Purchase Gymshark wear</h1>
+                <p>Select your favorite Gymshark wear and proceed to checkout.</p>
+            </section>
+
+            <section>
+                <h2>Order Form</h2>
+                <form action="submit_order.php" method="POST">
+                    <label for="product">Choose a product:</label>
+                    <select id="product" name="product">
+                        <option value="compression-shirt">Compression Shirt</option>
+                        <option value="compression-shorts">Compression Shorts</option>
+                        <option value="tshirt">Gymshark T-shirt</option>
+                        <option value="hoodie">Gymshark Hoodie</option>
+                    </select>
+                    
+                    <label for="size">Select size:</label>
+                    <select id="size" name="size">
+                        <option value="S">Small</option>
+                        <option value="M">Medium</option>
+                        <option value="L">Large</option>
+                        <option value="XL">X-Large</option>
+                    </select>
+                    
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" max="10" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="address">Shipping Address:</label>
+                    <textarea id="address" name="address" required></textarea>
+                    
+                    <a href="page4.html">
+                        <button type="button">Place Order</button>
+                    </a>
+                </form>
+            </section>
+            <footer>
+                <p>&copy; 2025 Gymshark - All Rights Reserved</p>
+            </footer>
+        </main>
+    </body>
+</html>

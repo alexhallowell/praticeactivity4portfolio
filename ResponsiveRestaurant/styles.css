@@ -1,0 +1,115 @@
+/* My Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5e6cc; /* Light beige background */
+    color: #600000; /* Dark red or maroon-ish text */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #800000; /* Maroon red */
+    color: white;
+    padding: 20px;
+}
+
+.logo {
+    width: 150px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 30%;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+.menu-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.menu-item {
+    width: 30%;
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item img {
+    width: 100px; /* Ensuring all of the small images are the same size */
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.directions {
+    padding: 20px;
+    background: #800000;
+    color: white;
+    margin-top: 20px;
+}
+
+.directions img {
+    width: 50%;
+    border-radius: 8px;
+}
+
+footer {
+    background: #600000;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Tablet View */
+
+@media screen and (max-width: 768px) {
+    .gallery {
+        display: none;
+    }
+    .menu-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu-item {
+        width: 80%;
+    }
+    footer p {
+        display: none; /* Hiding the address */
+    }
+}
+
+/* Mobile View */
+
+@media screen and (max-width: 480px) {
+    .menu-list, .gallery, footer {
+        display: none; /* Hiding everything except directions */
+    }
+    .directions img {
+        width: 90%;
+    }
+}

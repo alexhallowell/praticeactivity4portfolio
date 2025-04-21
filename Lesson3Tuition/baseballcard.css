@@ -1,0 +1,60 @@
+/* General Body Styles */
+body {
+   background-color: #f4f4f4;
+   font-family: Arial, sans-serif;
+   color: #333;
+   margin: 0;
+   padding: 0;
+}
+
+/* Title Styling */
+h1 {
+   background-color: #a10000;
+   color: white;
+   text-align: center;
+   padding: 20px;
+}
+
+/* Paragraph Text */
+p {
+   padding: 15px;
+   font-size: 1.1em;
+}
+
+/* List Styling */
+ul, ol {
+   padding-left: 20px;
+}
+
+/* Border around Elements */
+h2, h3, ul, ol {
+   border: 2px solid #a10000;
+   padding: 10px;
+   margin: 15px;
+}
+
+/* Hyperlink Styles */
+a {
+   color: #a10000;
+   text-decoration: none;
+}
+
+a:hover {
+   text-decoration: underline;
+}
+
+/* Specific ID Style for Item Detail Page */
+#price {
+   color: #a10000;
+   font-size: 1.5em;
+   font-weight: bold;
+}
+
+/* Image Styling */
+img {
+   max-width: 80%;
+   height: auto;
+   display: block;
+   margin: 0 auto;
+   border: 2px solid #fff;
+}
