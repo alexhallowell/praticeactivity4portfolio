@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333
+}
+
+header {
+    background-color: #002d62;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#main-title {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+nav {
+    background-color: #003366;
+}
+
+.nav-menu li {
+    margin: 0 15px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: transform 0.2 ease, color 0.2 ease;
+}
+
+.nav-menu a:active {
+    color: #ffffff;
+}
+
+main {
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+    background-color: white;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.featured-img img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    filter: brightness(95%);
+    transition: filter 0.3s ease;
+}
+
+.featured-img img:hover {
+    filter: brightness(105%);
+}
+
+.highlights ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.highlight {
+    font-weight: bold;
+    color: #002D62;
+}
+
+.more-info {
+    margin-bottom: 90px;
+}
+
+.stats-table {
+    margin-bottom: 60px;
+}
+
+.stats-table table {
+    margin: 0 auto;
+    background-color: #f5f5f5;
+    border-collapse: collapse;
+    width: 80%;
+    text-align: center;
+}
+
+.contact-form-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    padding-bottom: 60px;
+}
+
+.contact-form {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+button.btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+button.btn:hover {
+    background-color: #0056b3;
+}
+
+#formMessage {
+    font-weight: bold;
+}
+
+.nav-menu a.active {
+    font-weight: bold;
+    color: #0074D9;
+    border-bottom: 2px solid #0074D9;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #002D62;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+    .nav-menu {
+        flex-direction: column;
+    }
+
+    .nav-menu li {
+        margin: 10px 0;
+    }
+
+    #main-title {
+        font-size: 1.8rem;
+    }
+
+    .featured-img img {
+        max-height: 250px;
+    }
+}

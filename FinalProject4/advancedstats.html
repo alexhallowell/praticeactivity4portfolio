@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Advanced Stats in Baseball</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+<body>
+    <header>
+        <h1 id="main-title">Understanding Baseball Statistics</h1>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="basicstats.html">Basic Stats</a></li>
+                <li><a href="advancedstats.html">Advanced Stats</a></li>
+                <li><a href="comparestats.html">Compare Players</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>Advanced Baseball Stats</h2>
+            <p>
+                Advanced statistics go beyond the basics to give a fuller picture of a player's true value. These metrics are widely used in front offices, fantasy baseball, and analytics communities to evaluate performance more accurately.
+            </p>
+        </section>
+
+        <section class="stats-table">
+            <h3>Key Advanced Metrics</h3>
+            <table border="1" cellpadding="10" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Stat</th>
+                        <th>Full Name</th>
+                        <th>Formula</th>
+                        <th>What It Measures</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>fWAR</td>
+                        <td>Fangraphs' Wins Above Replacement</td>
+                        <td>(Batting Runs + Baserunning Runs + Fielding Runs + Positional Adjustment + League Adjustment + Replacement Runs) / (Runs Per Win)</td>
+                        <td>Estimates total value over a replacement-level player; useful for comparing players across positions</td>
+                    </tr>
+                    <tr>
+                        <td>wOBA</td>
+                        <td>Weighted On-Base Average</td>
+                        <td>(0.69xBB + 0.72xHBP + 0.89x1B + 1.27x2B + 1.62x3B + 2.10xHR) / (AB + BB - IBB + SF + HBP)</td>
+                        <td>More accurate than AVG, OBP, or SLG at evaluating offensive value</td>
+                    </tr>
+                    <tr>
+                        <td>BABIP</td>
+                        <td>Batting Average on Balls in Play</td>
+                        <td>(H - HR) / (AB - K - HR + SF)</td>
+                        <td>Helps identify how much of a player's success is based on luck or defense</td>
+                    </tr>
+                    <tr>
+                        <td>FIP</td>
+                        <td>Fielding Independent Pitching</td>
+                        <td>(13xHR + 3xBB - 2xK) / IP + constant</td>
+                        <td>Focuses only on events a pitcher can control, giving a clearer picture of true skill</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Statistics in Baseball. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+    </body>
+</html>
